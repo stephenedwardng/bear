@@ -17,6 +17,14 @@ class RiverTest < MiniTest::Test
     assert_equal("Clyde", @river.get_name())
   end
 
+  def test_count_fishes()
+    assert_equal(0, @river.count_fishes())
+  end
+
+  # def test_add_fish_to_river()
+  #   school = [@fish_1, @fish_2, @fish_3]
+  #   assert_equal(3, @river.count_fishes())
+  # end
 
 
 end
