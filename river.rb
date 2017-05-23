@@ -8,6 +8,10 @@ class River
     return @name
   end
 
+  def get_fishes()
+    return @fishes
+  end
+
   def count_fishes()
     return @fishes.count()
   end
