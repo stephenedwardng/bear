@@ -13,12 +13,14 @@ class Bear
     return "Raa Raa"
   end
 
-  # def take_a_fish()
-  #   # remove fish from river
-  #   fish_array = @fishes.get_fish()
-  #   # add fish to stomach
+  def take_a_fish(fishes) # still to track error in method
+    # remove fish from river and add fish to stomach
+    fish_array = fishes.get_fish()
 
-  # end
+    while(fish_array.length > 0)
+      @stomach << fish_array.shift()
+    end
+  end
 
   def count_food()
     return @stomach.count()

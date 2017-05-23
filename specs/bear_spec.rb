@@ -27,10 +27,11 @@ class BearTest < MiniTest::Test
     assert_equal("Raa Raa", @bear_1.roar())
   end
 
-  # def test_take_a_fish()
-  #   @river.take_a_fish()
-  #   assert_equal(2, @river.count_fishes())
-  # end
+  def test_take_a_fish()
+    @bear_1.take_a_fish(@fishes)
+    assert_equal(2, @river.count_fishes())
+    assert_equal(1, @bear.count_food())
+  end
 
   def test_count_food()
     assert_equal(0, @bear_1.count_food())
